@@ -1,7 +1,7 @@
 package org.javasimon.console.text;
 
 /**
- * Basic value formatter. 
+ * Basic value formatter.
  * Handles null value delegating to a null Stringifier.
  * @param <T> Input type
  * @author gquintana
@@ -26,7 +26,8 @@ public class BaseStringifier<T> implements Stringifier<T> {
 	protected boolean isValid(T object) {
 		return object!=null;
 	}
-	@Override
+
+	//@Override
 	public final String toString(T object) {
 		return isValid(object)?doToString(object):nullToString();
 	}

@@ -59,7 +59,7 @@ public class ResetAction extends Action {
 
 	private static class SimonVisitorImpl implements SimonVisitor {
 		private int count;
-		@Override
+		//@Override
 		public void visit(Simon simon) throws IOException {
 			simon.reset();
 			count++;

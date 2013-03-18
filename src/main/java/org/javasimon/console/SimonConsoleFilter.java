@@ -20,7 +20,7 @@ import org.javasimon.utils.SimonUtils;
 public class SimonConsoleFilter implements Filter {
 	private SimonConsoleRequestProcessor requestProcessor;
 
-	@Override
+	//@Override
 	public final void init(FilterConfig filterConfig) {
 		requestProcessor = new SimonConsoleRequestProcessor(
 			filterConfig.getInitParameter(SimonConsoleServlet.URL_PREFIX_INIT_PARAMETER));
@@ -58,7 +58,7 @@ public class SimonConsoleFilter implements Filter {
 		filterChain.doFilter(request, response);
 	}
 
-	@Override
+	//@Override
 	public void destroy() {
 	}
 }

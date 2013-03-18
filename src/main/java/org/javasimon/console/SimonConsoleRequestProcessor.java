@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.javasimon.Manager;
 import org.javasimon.SimonManager;
 import org.javasimon.console.action.*;
@@ -116,7 +117,7 @@ class SimonConsoleRequestProcessor {
 		// /console is redirected to /console/index.html
 		addActionBinding(new ActionBinding<Action>() {
 			public boolean supports(ActionContext actionContext) {
-				return actionContext.getPath().isEmpty();
+				return StringUtils.isEmpty(actionContext.getPath());
 			}
 
 			public Action create(ActionContext actionContext) {
