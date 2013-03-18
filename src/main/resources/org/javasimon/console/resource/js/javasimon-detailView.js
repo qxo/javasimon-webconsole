@@ -101,6 +101,8 @@ window.javasimon=javasimon;
 			row=this.fnAppendRow(section.eTableBody);
 			this.fnAppendSimonLabelValueCell(row, "Max Active", "maxActive");
 			this.fnAppendSimonLabelValueCell(row, "Max Active Timestamp", "maxActiveTimestamp");
+			row=this.fnAppendRow(section.eTableBody);
+			this.fnAppendSimonLabelValueCell(row, "Active", "active");
 		},
 		fnRenderCounterDiv:function() {
 			// Section Title

@@ -25,7 +25,7 @@ public class DetailHtmlAction extends Action {
 	 * Simon name
 	 */
 	private String name;
-	
+
 	/**
 	 * Constructor.
 	 */
@@ -104,6 +104,11 @@ public class DetailHtmlAction extends Action {
 						.simonProperty(simon, "Max Active", "maxActive")
 						.simonProperty(simon, "Max Active Timestamp", "maxActiveTimestamp")
 					.endRow()
+						.beginRow()
+						.simonProperty(simon, "Active", "active")
+					//	.simonProperty(simon, "Max Active Timestamp", "maxActiveTimestamp")
+					.endRow()
+
 				.endSection();
 				break;
 			case COUNTER:
@@ -138,5 +143,5 @@ public class DetailHtmlAction extends Action {
 		htmlBuilder.footer();
 	}
 
-	
+
 }

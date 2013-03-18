@@ -65,7 +65,7 @@ public class AbstractTableAction extends Action {
 	 * Decimal format pattern used for printing doubles
 	 */
 	protected String numberPattern = StringifierFactory.READABLE_NUMBER_PATTERN;
-	
+
 	/**
 	 * Flag indicating  if simons should be reset during sampling
 	 */
@@ -101,6 +101,8 @@ public class AbstractTableAction extends Action {
 		});
 		columns.add(new Column<Long>("Counter", "counter"));
 		columns.add(new Column<Long>("Total", "total"));
+		columns.add(new Column<Long>("Active", "active"));
+		columns.add(new Column<Long>("MaxActive", "maxActive"));
 		columns.add(new Column<Long>("Min", "min"));
 		columns.add(new Column<Long>("Mean", "mean"));
 		columns.add(new Column<Long>("Last", "last"));
